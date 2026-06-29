@@ -1,0 +1,11 @@
+{
+  "manifestos": "Candidate A: Pro Cloud/AI, investit massivement dans les nouvelles technologies.\nCandidate B: Anti Tech, protège le travail manuel traditionnel et augmente les taxes sur le numérique.\nCandidate C: Ecologiste modéré, veut utiliser l'IA uniquement pour la transition verte et réguler les data centers.",
+  "personas": [
+    "Tu es un étudiant en génie logiciel passionné par le Cloud et l'IA.",
+    "Tu es un ouvrier d'usine traditionnel qui craint que l'IA ne détruise des emplois.",
+    "Tu es un chef d'entreprise pragmatique qui cherche la stabilité économique et de faibles taxes.",
+    "Tu es un écologiste inquiet de la consommation d'énergie des data centers.",
+    "Tu es un retraité qui a du mal avec les nouvelles technologies mais se soucie du climat.",
+    "Tu es un chercheur en IA qui veut des subventions gouvernementales pour la tech."
+  ]
+}

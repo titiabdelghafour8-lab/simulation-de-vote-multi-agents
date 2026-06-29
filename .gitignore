@@ -1,0 +1,28 @@
+# Virtual environments
+venv/
+linux_venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Local database
+*.db
+election.db
+
+# Secrets & Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
+*.rar
+*.tar.gz
