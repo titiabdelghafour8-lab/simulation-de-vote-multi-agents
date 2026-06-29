@@ -80,7 +80,7 @@ try:
         if st.button("▶️ Lancer une Nouvelle Simulation", type="primary", use_container_width=True):
             with st.spinner("Les agents débattent... (cela prend une minute)"):
                 # Run the simulation script
-                subprocess.run(["python3", "simulation.py"], capture_output=True, text=True)
+                subprocess.run(["python3", "src/simulation.py"], capture_output=True, text=True)
             st.success("Simulation Terminée !")
             time.sleep(1)
             st.rerun()

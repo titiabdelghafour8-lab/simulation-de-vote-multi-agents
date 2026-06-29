@@ -11,10 +11,10 @@ build:
 	./build.sh
 
 simulate:
-	$(PYTHON) simulation.py
+	$(PYTHON) src/simulation.py
 
 dashboard:
-	$(STREAMLIT) run dashboard.py
+	$(STREAMLIT) run src/dashboard.py
 
 clean:
 	rm -rf $(VENV) linux_venv __pycache__
