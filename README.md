@@ -35,13 +35,7 @@ PFA PROJECT/
 
 ## 🚀 Installation et Configuration
 
-### 1. Cloner le Projet
-```bash
-git clone <url_de_votre_depot>
-cd "PFA PROJECT"
-```
-
-### 2. Configurer les variables d'environnement
+### 1. Configurer les variables d'environnement
 Copiez le fichier exemple `.env.example` pour créer votre fichier `.env` :
 ```bash
 cp .env.example .env
@@ -51,13 +45,12 @@ Ouvrez le fichier `.env` et ajoutez votre clé API Groq :
 GROQ_API_KEY=gsk_votre_cle_api_ici
 ```
 
-### 3. Installer les dépendances
-Nous vous recommandons de créer un environnement virtuel :
+### 2. Lancer l'installation automatique
+Le projet utilise un `Makefile` et un script de construction automatique. Lancez simplement la commande suivante :
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+make build
 ```
+Cette commande crée automatiquement l'environnement virtuel (`linux_venv`) et y installe toutes les dépendances.
 
 ---
 
@@ -66,17 +59,12 @@ pip install -r requirements.txt
 ### Lancer l'interface de visualisation (Dashboard)
 Pour démarrer le dashboard interactif Streamlit :
 ```bash
-streamlit run dashboard.py
+make dashboard
 ```
-L'interface s'ouvrira automatiquement dans votre navigateur. Vous pourrez :
-* Lancer une nouvelle simulation de vote en direct.
-* Parcourir l'historique de chaque simulation round par round.
-* Analyser le raisonnement de chaque agent et tracer l'évolution de ses choix.
-* Exporter les données au format CSV.
 
-### Lancer la simulation manuellement
-Si vous souhaitez exécuter la simulation directement en ligne de commande :
+### Lancer la simulation manuellement en ligne de commande
+Si vous souhaitez exécuter la simulation directement en tâche de fond :
 ```bash
-python3 simulation.py
+make simulate
 ```
-Les résultats seront automatiquement ajoutés à la base de données SQLite locale `election.db`.
+Les résultats seront automatiquement enregistrés dans la base de données SQLite locale `election.db`.
